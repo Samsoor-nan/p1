@@ -12,43 +12,112 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .main-card{
+      max-width: 100%;
+      margin: auto;
+      position: relative;
+      background-color:  hsl(217, 54%, 11%);  
+      margin-top: 40px;
+      border-radius: 10px;
+    }
     .card{
-      width:30%;
+      width:20%;
       margin: auto;
       position: relative;
       background-color:  hsl(216, 50%, 16%);
       margin-top: 40px;
+      padding: 20px;
       font-family: Outfit;
+      font-weight: 300, 400, 600;
+      border-radius: 10px;
     }
     .equi{
       max-width:100%;
       margin-left: auto;
       margin-right: auto;
       display: block;
+      border-radius: 10px;
       
-      padding:10px;
+      
     }
     .title{
       color:hsl(0, 0%, 100%);
+      font-size: 20px;
+    }
+    .equip{
+      color:hsl(215, 51%, 70%);
+      font-size: 18px;
+      font-family: Outfit;
+      font-weight: 300, 400, 600;
+    }
+    .digit > p{
+      color:hsl(178, 100%, 50%);
+      display: inline;
+      
+     
+    }
+    .time > p{
+      color:hsl(215, 51%, 70%);
+      display: inline;
+      text-align: right;
+      
+     
+    }
+    .digit,.time{
+      
+      display: inline;
+      
+    }
+    .dig-time{
+     
+      display: flex;
+      justify-content: space-between;
+    }
+    #tt{
+      text-align: right;
+      margin-lef: 0%;
+    }
+    hr{
+      padding: 0%;
+      margin: 0%;
+      color: hsl(215, 51%, 70%);
+    }
+    .footer{
+      border: 1px solid yellow;
+    }
+    .footer > img,p,t{
+      display: inline;
     }
 
   </style>
 </head>
 <body>
+  <div class="main-card">
 <div class="card">
   <img src="images/image-equilibrium.jpg" class="equi" >
   <h1 class="title">Equilibrium #3429</h1>
 
-  <p>Our Equilibrium collection promotes balance and calm.</p>
-
-  <p>0.041 ETH</p>
-  <p>3 days left</p>
-  
-  <p>Creation of Jules Wyvern</p>
+  <p class="equip">Our Equilibrium collection promotes balance and calm.</p>
+  <div class="dig-time"> 
+  <div class="digit">
+    <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+    <p>0.041 ETH</p>
+  </div>
+  <div class="time">
+    <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>  
+  <p id="tt">3 days left</p>
+  </div>
+  </div>
+  <hr>
+  <div class="footer">
+  <img src="images/image-avatar.png" height="10%" width="10%" >
+  <p style="color: hsl(0, 0%, 100%);"><t style="color:hsl(215, 51%, 70%) ;">Creation of </t>Jules Wyvern</p>
+  </div>
+</div>
 </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Samsoor</a>.
   </div>
 </body>
 </html>
