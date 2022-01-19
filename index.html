@@ -13,9 +13,11 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     .main-card{
-      max-width: 100%;
-      min-height: 100%;
-      
+      max-width: 90%;
+      max-height: 80%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin: auto;
       background-color:  hsl(217, 54%, 11%);  
       
       
@@ -64,38 +66,44 @@
      
     }
     .digit,.time{
-      
-      display: inline;
-      
+      display: flex;
+      align-items: center;
+      padding: 0%;
+    
+
     }
+   
     .dig-time{
      
       display: flex;
       justify-content: space-between;
       padding-top: 10px;
       padding-bottom: 20px;
+      
     }
     #tt{
-      text-align: right;
-      margin-lef: 0%;
+     padding-left: 10px;
     }
     hr{
       padding: 0%;
       margin: 0%;
       color: hsl(215, 51%, 70%);
+      border: 0.2px solid hsl(215, 51%, 70%);
     }
     .footer{
       display: flex;
       
-      padding-top: 10px;
-      
     }
     .avatar-img{
-      display: inline;
+     
       height: 45px;
     }
     #footer-p{
       padding-left: 10px;
+    }
+    .equi:hover,.title:hover,#footerp:hover,.footer:hover{
+      
+      color: hsl(178, 100%, 50%);
     }
 
 
@@ -111,7 +119,7 @@
   <div class="dig-time"> 
   <div class="digit">
     <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
-    <p>0.041 ETH</p>
+    <p id="tt">0.041 ETH</p>
   </div>
   <div class="time">
     <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>  
@@ -122,7 +130,8 @@
   <br>
   <div class="footer">
   <img class="avatar-img" src="images/image-avatar.png"  >
-  <p id="footer-p" style="color: hsl(0, 0%, 100%);"><t style="color:hsl(215, 51%, 70%) ;">Creation of </t>Jules Wyvern</p>
+  
+  <p id="footer-p" style="color: hsl(0, 0%, 100%);"><b id="ttt" style="color:hsl(215, 51%, 70%) ;">Creation of </b>Jules Wyvern</p>
   </div>
 </div>
 </div>
